@@ -22,7 +22,7 @@ Scenario: explore findPetsByTags inline
 	You can use this test to quickly explore your API.
 	You can then copy this payload and paste it with Ctrl+Shift+V as an Example row above.
 * def statusCode = 200
-* def params = {"tags":""}
+* def params = {"tags":"dogs"}
 * def matchResponse = true
 * call read('findPetsByTags.feature@operation') 
 

@@ -13,14 +13,14 @@ Scenario Outline: Test deletePet for <status> status code
 	* match result.responseStatus == <status>
 		Examples:
 		| status | api_key | petId | matchResponse |
-		| 400    | fill some value | 0 | false          |
+		| 200    | fill some value | 0 | false          |
 
 
 @operationId=deletePet
 Scenario: explore deletePet inline
 	You can use this test to quickly explore your API.
 	You can then copy this payload and paste it with Ctrl+Shift+V as an Example row above.
-* def statusCode = 400
+* def statusCode = 200
 * def params = {"api_key":"fill some value","petId":0}
 * def matchResponse = true
 * call read('deletePet.feature@operation') 

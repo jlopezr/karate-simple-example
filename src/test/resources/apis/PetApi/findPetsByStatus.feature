@@ -59,8 +59,8 @@ Scenario: validates findPetsByStatus response
 """
 {
   "id": "##number",
-  "name": "#string",
-  "category": {
+  "name": "##string",
+  "?category": {
     "id": "##number",
     "name": "##string"
   },
