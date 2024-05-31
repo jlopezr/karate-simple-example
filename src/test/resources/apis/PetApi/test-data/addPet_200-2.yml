@@ -1,0 +1,16 @@
+statusCode: 200
+headers: {}
+params: {}
+body:
+  id: 10
+  name: new doggie
+  category:
+    id: 1
+    name: Dogs
+  photoUrls:
+    - string
+  tags:
+    - id: 0
+      name: string
+  status: available
+matchResponse: true
