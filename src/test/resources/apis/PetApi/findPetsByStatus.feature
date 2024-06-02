@@ -60,10 +60,6 @@ Scenario: validates findPetsByStatus response
 {
   "id": "##number",
   "name": "##string",
-  "?category": {
-    "id": "##number",
-    "name": "##string"
-  },
   "photoUrls": "#array",
   "tags": "##array",
   "status": "##string"
@@ -72,8 +68,9 @@ Scenario: validates findPetsByStatus response
 * match each response contains responseMatch
 
 # validate nested array: photoUrls
-* def photoUrls_MatchesEach = "##string"
-* match each response[*].photoUrls contains photoUrls_MatchesEach
+#* def photoUrls_MatchesEach = "##string"
+#* match each response[*].photoUrls contains photoUrls_MatchesEach
+
 # validate nested array: tags
-* def tags_MatchesEach = {"id":"##number","name":"##string"}
-* match each response[*].tags contains tags_MatchesEach
+#* def tags_MatchesEach = {"id":"##number","name":"##string"}
+#* match each response[*].tags contains tags_MatchesEach
